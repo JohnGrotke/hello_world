@@ -1,0 +1,1 @@
+docker run --rm  hello_world_cpp:3
