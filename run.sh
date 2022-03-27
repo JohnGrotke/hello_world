@@ -1,1 +1,1 @@
-docker run --rm  hello_world_cpp:3
+docker run --rm  johngrotke/hello-world:latest

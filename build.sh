@@ -1,1 +1,1 @@
-docker build . -t hello_world_cpp
+docker build . -t johngrotke/hello-world

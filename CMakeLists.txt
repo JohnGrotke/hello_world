@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.16.3)
 
-project(HelloWorld)
+project(hello-world)
 
-add_executable(${PROJECT_NAME} helloWorld.cpp)
+add_executable(${PROJECT_NAME} hello-world.cpp)
 
 add_subdirectory(Adder)
 
