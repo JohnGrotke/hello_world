@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/john/git/hello_world/build",
+  "command": "/usr/bin/g++   -I/home/john/git/hello_world/Adder  -g   -o CMakeFiles/hello-world.dir/hello-world.cpp.o -c /home/john/git/hello_world/hello-world.cpp",
+  "file": "/home/john/git/hello_world/hello-world.cpp"
+},
+{
+  "directory": "/home/john/git/hello_world/build/Adder",
+  "command": "/usr/bin/g++    -g   -o CMakeFiles/Adder.dir/Adder.cpp.o -c /home/john/git/hello_world/Adder/Adder.cpp",
+  "file": "/home/john/git/hello_world/Adder/Adder.cpp"
+}
+]
