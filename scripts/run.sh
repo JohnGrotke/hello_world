@@ -1,1 +1,1 @@
-docker run --rm  johngrotke/hello-world:latest
+docker run -it --rm -v "$(pwd)":/app -w /app johngrotke/hello-world:latest bash

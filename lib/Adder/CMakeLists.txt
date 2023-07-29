@@ -6,6 +6,7 @@ cmake_minimum_required(VERSION 3.16.3)
 # Define the library target called "Adder"
 add_library(Adder
     adder.cpp
+    # Remove the 'adder.h' entry from here
 )
 
 # Include directories if needed (to make the 'adder.h' file available)
