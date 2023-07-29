@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Adder.dir/Adder.cpp.o"
+  "CMakeFiles/Adder.dir/adder.cpp.o"
   "libAdder.a"
   "libAdder.pdb"
 )

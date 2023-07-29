@@ -45,5 +45,6 @@
         "streambuf": "cpp",
         "typeinfo": "cpp"
     },
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "C_Cpp.errorSquiggles": "Enabled"
 }

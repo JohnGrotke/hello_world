@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/john/git/hello_world
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/john/git/hello_world/build
+CMAKE_BINARY_DIR = /home/john/git/hello_world
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/build/CMakeFiles /home/john/git/hello_world/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/CMakeFiles /home/john/git/hello_world/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -133,35 +133,35 @@ Adder: cmake_check_build_system
 
 # fast build rule for target.
 Adder/fast:
-	$(MAKE) -f Adder/CMakeFiles/Adder.dir/build.make Adder/CMakeFiles/Adder.dir/build
+	$(MAKE) -f lib/Adder/CMakeFiles/Adder.dir/build.make lib/Adder/CMakeFiles/Adder.dir/build
 .PHONY : Adder/fast
 
-hello-world.o: hello-world.cpp.o
+src/hello-world.o: src/hello-world.cpp.o
 
-.PHONY : hello-world.o
+.PHONY : src/hello-world.o
 
 # target to build an object file
-hello-world.cpp.o:
-	$(MAKE) -f CMakeFiles/hello-world.dir/build.make CMakeFiles/hello-world.dir/hello-world.cpp.o
-.PHONY : hello-world.cpp.o
+src/hello-world.cpp.o:
+	$(MAKE) -f CMakeFiles/hello-world.dir/build.make CMakeFiles/hello-world.dir/src/hello-world.cpp.o
+.PHONY : src/hello-world.cpp.o
 
-hello-world.i: hello-world.cpp.i
+src/hello-world.i: src/hello-world.cpp.i
 
-.PHONY : hello-world.i
+.PHONY : src/hello-world.i
 
 # target to preprocess a source file
-hello-world.cpp.i:
-	$(MAKE) -f CMakeFiles/hello-world.dir/build.make CMakeFiles/hello-world.dir/hello-world.cpp.i
-.PHONY : hello-world.cpp.i
+src/hello-world.cpp.i:
+	$(MAKE) -f CMakeFiles/hello-world.dir/build.make CMakeFiles/hello-world.dir/src/hello-world.cpp.i
+.PHONY : src/hello-world.cpp.i
 
-hello-world.s: hello-world.cpp.s
+src/hello-world.s: src/hello-world.cpp.s
 
-.PHONY : hello-world.s
+.PHONY : src/hello-world.s
 
 # target to generate assembly for a file
-hello-world.cpp.s:
-	$(MAKE) -f CMakeFiles/hello-world.dir/build.make CMakeFiles/hello-world.dir/hello-world.cpp.s
-.PHONY : hello-world.cpp.s
+src/hello-world.cpp.s:
+	$(MAKE) -f CMakeFiles/hello-world.dir/build.make CMakeFiles/hello-world.dir/src/hello-world.cpp.s
+.PHONY : src/hello-world.cpp.s
 
 # Help Target
 help:
@@ -173,9 +173,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... hello-world"
 	@echo "... Adder"
-	@echo "... hello-world.o"
-	@echo "... hello-world.i"
-	@echo "... hello-world.s"
+	@echo "... src/hello-world.o"
+	@echo "... src/hello-world.i"
+	@echo "... src/hello-world.s"
 .PHONY : help
 
 

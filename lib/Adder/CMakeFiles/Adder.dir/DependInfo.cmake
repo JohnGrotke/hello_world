@@ -4,12 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/john/git/hello_world/Adder/Adder.cpp" "/home/john/git/hello_world/build/Adder/CMakeFiles/Adder.dir/Adder.cpp.o"
+  "/home/john/git/hello_world/lib/Adder/adder.cpp" "/home/john/git/hello_world/lib/Adder/CMakeFiles/Adder.dir/adder.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "lib/Adder"
   )
 
 # Targets to which this target links.

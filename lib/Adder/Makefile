@@ -51,7 +51,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/john/git/hello_world
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/john/git/hello_world/build
+CMAKE_BINARY_DIR = /home/john/git/hello_world
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/john/git/hello_world/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/build/CMakeFiles /home/john/git/hello_world/build/Adder/CMakeFiles/progress.marks
-	cd /home/john/git/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 Adder/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/build/CMakeFiles 0
+	cd /home/john/git/hello_world && $(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/CMakeFiles /home/john/git/hello_world/lib/Adder/CMakeFiles/progress.marks
+	cd /home/john/git/hello_world && $(MAKE) -f CMakeFiles/Makefile2 lib/Adder/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/john/git/hello_world/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/john/git/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 Adder/clean
+	cd /home/john/git/hello_world && $(MAKE) -f CMakeFiles/Makefile2 lib/Adder/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,60 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/john/git/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 Adder/preinstall
+	cd /home/john/git/hello_world && $(MAKE) -f CMakeFiles/Makefile2 lib/Adder/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/john/git/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 Adder/preinstall
+	cd /home/john/git/hello_world && $(MAKE) -f CMakeFiles/Makefile2 lib/Adder/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/john/git/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/john/git/hello_world && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-Adder/CMakeFiles/Adder.dir/rule:
-	cd /home/john/git/hello_world/build && $(MAKE) -f CMakeFiles/Makefile2 Adder/CMakeFiles/Adder.dir/rule
-.PHONY : Adder/CMakeFiles/Adder.dir/rule
+lib/Adder/CMakeFiles/Adder.dir/rule:
+	cd /home/john/git/hello_world && $(MAKE) -f CMakeFiles/Makefile2 lib/Adder/CMakeFiles/Adder.dir/rule
+.PHONY : lib/Adder/CMakeFiles/Adder.dir/rule
 
 # Convenience name for target.
-Adder: Adder/CMakeFiles/Adder.dir/rule
+Adder: lib/Adder/CMakeFiles/Adder.dir/rule
 
 .PHONY : Adder
 
 # fast build rule for target.
 Adder/fast:
-	cd /home/john/git/hello_world/build && $(MAKE) -f Adder/CMakeFiles/Adder.dir/build.make Adder/CMakeFiles/Adder.dir/build
+	cd /home/john/git/hello_world && $(MAKE) -f lib/Adder/CMakeFiles/Adder.dir/build.make lib/Adder/CMakeFiles/Adder.dir/build
 .PHONY : Adder/fast
 
-Adder.o: Adder.cpp.o
+adder.o: adder.cpp.o
 
-.PHONY : Adder.o
+.PHONY : adder.o
 
 # target to build an object file
-Adder.cpp.o:
-	cd /home/john/git/hello_world/build && $(MAKE) -f Adder/CMakeFiles/Adder.dir/build.make Adder/CMakeFiles/Adder.dir/Adder.cpp.o
-.PHONY : Adder.cpp.o
+adder.cpp.o:
+	cd /home/john/git/hello_world && $(MAKE) -f lib/Adder/CMakeFiles/Adder.dir/build.make lib/Adder/CMakeFiles/Adder.dir/adder.cpp.o
+.PHONY : adder.cpp.o
 
-Adder.i: Adder.cpp.i
+adder.i: adder.cpp.i
 
-.PHONY : Adder.i
+.PHONY : adder.i
 
 # target to preprocess a source file
-Adder.cpp.i:
-	cd /home/john/git/hello_world/build && $(MAKE) -f Adder/CMakeFiles/Adder.dir/build.make Adder/CMakeFiles/Adder.dir/Adder.cpp.i
-.PHONY : Adder.cpp.i
+adder.cpp.i:
+	cd /home/john/git/hello_world && $(MAKE) -f lib/Adder/CMakeFiles/Adder.dir/build.make lib/Adder/CMakeFiles/Adder.dir/adder.cpp.i
+.PHONY : adder.cpp.i
 
-Adder.s: Adder.cpp.s
+adder.s: adder.cpp.s
 
-.PHONY : Adder.s
+.PHONY : adder.s
 
 # target to generate assembly for a file
-Adder.cpp.s:
-	cd /home/john/git/hello_world/build && $(MAKE) -f Adder/CMakeFiles/Adder.dir/build.make Adder/CMakeFiles/Adder.dir/Adder.cpp.s
-.PHONY : Adder.cpp.s
+adder.cpp.s:
+	cd /home/john/git/hello_world && $(MAKE) -f lib/Adder/CMakeFiles/Adder.dir/build.make lib/Adder/CMakeFiles/Adder.dir/adder.cpp.s
+.PHONY : adder.cpp.s
 
 # Help Target
 help:
@@ -161,9 +161,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Adder"
-	@echo "... Adder.o"
-	@echo "... Adder.i"
-	@echo "... Adder.s"
+	@echo "... adder.o"
+	@echo "... adder.i"
+	@echo "... adder.s"
 .PHONY : help
 
 
@@ -175,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/john/git/hello_world/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/john/git/hello_world && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

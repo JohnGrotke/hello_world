@@ -1,2 +1,8 @@
-build/*
 .vscode/**/*
+# CMake build artifacts
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/CMakeScripts/
+/*.cmake
+/*.txt
