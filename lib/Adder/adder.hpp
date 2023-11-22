@@ -4,10 +4,9 @@
 
 /**
  * @brief Adds two integers together
- * 
- * @param a 
- * @param b 
- * @return int 
+ *
+ * @param a
+ * @param b
+ * @return int
  */
-int add (int a, int b);
- 
+int add(int a, int b);
