@@ -10,3 +10,4 @@
 **/CMakeFiles
 **/*.a
 **/*.cmake
+.bash_history

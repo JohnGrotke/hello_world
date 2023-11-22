@@ -1,5 +1,5 @@
 
-#include <adder.h>
+#include <adder.hpp>
 #include <iostream>
 
 int main() {
