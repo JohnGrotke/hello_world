@@ -6,3 +6,7 @@
 /CMakeScripts/
 /*.cmake
 /*.txt
+/Makefile
+**/CMakeFiles
+**/*.a
+**/*.cmake
